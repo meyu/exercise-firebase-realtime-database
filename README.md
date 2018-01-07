@@ -1,1 +1,0 @@
-# exercise-firebase-realtime-database
