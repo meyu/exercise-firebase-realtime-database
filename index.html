@@ -7,14 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    
+
 </head>
 
 <body>
 
-    <input id='input' type="text" />
-    <input id='send' type="button" value="write down" >
-    <ul id="list"></ul>
+    <div>
+        <input id='input' type="text" placeholder="請自由填寫" />
+        <input id='send' type="button" value="新增">
+    </div>
+
+    <div>
+        <select id="order_by">
+            <option value="0">新事項排前面</option>
+            <option value="1">舊事項排前面</option>
+            <option value="2">依名稱排序</option>
+            <option value="3">依名稱排序(逆)</option>
+        </select>
+        <ul id="list"></ul>
+    </div>
 
     <script src="index.js"></script>
 </body>
